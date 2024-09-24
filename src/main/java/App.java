@@ -14,10 +14,12 @@ public class App {
 
         Cat catBean1 =
                 (Cat) applicationContext.getBean("cat");
+        catBean1.setName("Fluffy");
         System.out.println(catBean1.getName());
 
         Cat catBean2 =
                 (Cat) applicationContext.getBean("cat");
+        System.out.println(catBean2.getName());
 
         System.out.println(bean.equals(bean1));
         System.out.println(catBean1.equals(catBean2));
